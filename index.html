@@ -1,211 +1,427 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Venkata Sai Kiran Nadupuru — AWS Cloud Engineer portfolio, cloud infrastructure, automation and monitoring projects.">
-  <title>Venkata Sai Kiran | AWS Cloud Engineer</title>
-  <style>
-    :root {
-      --bg: #0b1120;
-      --panel: #111c30;
-      --text: #edf4ff;
-      --muted: #a6b5cc;
-      --accent: #60a5fa;
-      --border: #26364e;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Inter, "Segoe UI", Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { width: min(1080px, 90%); margin: auto; }
-    header {
-      border-bottom: 1px solid var(--border);
-      position: sticky; top: 0;
-      background: #0b1120f2;
-      backdrop-filter: blur(12px);
-    }
-    nav {
-      min-height: 72px; display: flex;
-      justify-content: space-between; align-items: center;
-      gap: 20px; flex-wrap: wrap;
-    }
-    .brand { font-weight: 750; color: var(--text); }
-    .links { display: flex; gap: 20px; flex-wrap: wrap; }
-    .links a { color: var(--muted); font-size: .94rem; }
-    .hero { padding: 100px 0 76px; }
-    .eyebrow { color: var(--accent); font-weight: 650; }
-    h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.12; margin: 16px 0; letter-spacing: -2px; }
-    h2 { font-size: 1.9rem; margin-bottom: 10px; }
-    .intro { max-width: 690px; color: var(--muted); font-size: 1.12rem; }
-    .actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
-    .btn { padding: 11px 19px; border: 1px solid var(--border); border-radius: 8px; font-weight: 650; }
-    .primary { background: var(--accent); color: #081326; border-color: var(--accent); }
-    section { padding: 48px 0; }
-    .section-intro { color: var(--muted); margin-top: 0; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; margin-top: 26px; }
-    .card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 23px; }
-    .card h3 { margin-top: 0; }
-    .card p, .about { color: var(--muted); }
-    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 17px 0; }
-    .tag { background: #1b2b43; color: #c9ddfb; padding: 4px 9px; border-radius: 5px; font-size: .82rem; }
-    .skill-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
-    .skill { border: 1px solid var(--border); border-radius: 8px; padding: 8px 13px; }
-    .contact-card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 26px; }
-    footer { border-top: 1px solid var(--border); padding: 26px 0; color: var(--muted); font-size: .9rem; }
-    @media(max-width: 600px) {
-      .hero { padding-top: 65px; }
-      .links { gap: 12px; }
-      nav { padding: 12px 0; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Venkata Sai Kiran Nadupuru | Cloud &amp; DevOps Engineer</title>
+<meta name="description" content="Cloud and DevOps engineer (fresher) building AWS infrastructure with Terraform, Jenkins and Docker. Projects, skills and contact.">
+<meta property="og:title" content="Venkata Sai Kiran Nadupuru | Cloud &amp; DevOps Engineer">
+<meta property="og:description" content="AWS, Terraform, Jenkins, Docker. Three-tier deployments, serverless APIs and auto-healing monitoring.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2312202F'/><text x='50' y='68' font-size='54' text-anchor='middle' fill='%2338BDB8' font-family='sans-serif' font-weight='700'>SK</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --fog:#EDF1F5;
+  --paper:#F8FAFC;
+  --ink:#12202F;
+  --slate:#4F6073;
+  --line:#C9D3DD;
+  --teal:#0B7A78;
+  --teal-soft:#D5EDEC;
+  --signal:#C98A00;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--fog);color:var(--ink);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:var(--teal);text-underline-offset:3px}
+a:hover{color:var(--ink)}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* ---------- Header ---------- */
+header.top{position:sticky;top:0;z-index:10;background:rgba(237,241,245,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font:700 1.1rem var(--display);color:var(--ink);text-decoration:none}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:var(--slate);text-decoration:none;font-size:.95rem;font-weight:500}
+nav a:hover{color:var(--ink);text-decoration:underline}
+
+/* ---------- Hero ---------- */
+.hero{padding:64px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.hero h1{font:800 clamp(2.4rem,5.2vw,4rem)/1.04 var(--display);letter-spacing:-.025em}
+.hero .role{margin-top:18px;font:500 1.25rem/1.4 var(--display);color:var(--teal)}
+.hero p.lead{margin-top:18px;max-width:34em;color:var(--slate)}
+.actions{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--ink);transition:background .15s,color .15s}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn.primary:hover{background:var(--teal);border-color:var(--teal);color:#fff}
+.btn.ghost{color:var(--ink);background:transparent}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+
+/* Architecture diagram (the one memorable element) */
+.diagram{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px}
+.diagram svg{display:block;width:100%;height:auto}
+.diagram .caption{margin-top:12px;min-height:3.4em;font-size:.95rem;color:var(--slate);border-top:1px dashed var(--line);padding-top:10px}
+.diagram .caption strong{color:var(--ink)}
+.node{cursor:pointer}
+.node rect{fill:#fff;stroke:var(--ink);stroke-width:1.6;transition:fill .15s}
+.node text{font:600 13px var(--body);fill:var(--ink);pointer-events:none}
+.node text.sub{font:400 11px var(--body);fill:var(--slate)}
+.node:hover rect,.node.active rect,.node:focus-visible rect{fill:var(--teal-soft);stroke:var(--teal)}
+.node:focus-visible{outline:none}
+.node:focus-visible rect{stroke-width:3;stroke:var(--signal)}
+.zone{fill:none;stroke:var(--line);stroke-width:1.4;stroke-dasharray:5 4}
+.zone.vpc{stroke:var(--slate);stroke-dasharray:none;stroke-width:1.6}
+.zone-label{font:500 11px var(--body);fill:var(--slate)}
+.flow{fill:none;stroke:var(--teal);stroke-width:2;stroke-dasharray:200;stroke-dashoffset:200;animation:draw 1.2s ease-out forwards}
+.flow:nth-of-type(2){animation-delay:.25s}.flow:nth-of-type(3){animation-delay:.5s}.flow:nth-of-type(4){animation-delay:.75s}
+@keyframes draw{to{stroke-dashoffset:0}}
+
+/* ---------- Sections ---------- */
+section{padding:64px 0;border-top:1px solid var(--line)}
+section h2{font:700 clamp(1.7rem,3vw,2.2rem)/1.15 var(--display);letter-spacing:-.015em;margin-bottom:28px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.about p{max-width:36em}
+.facts dt{font-weight:600}
+.facts dd{color:var(--slate);margin-bottom:12px}
+
+/* Skills */
+.skills{display:grid;grid-template-columns:200px 1fr;gap:0}
+.skills dt,.skills dd{padding:12px 0;border-bottom:1px solid var(--line)}
+.skills dt{font-weight:600}
+.skills dd{color:var(--slate)}
+
+/* Projects */
+.project{display:grid;grid-template-columns:220px 1fr;gap:12px 40px;padding:28px 0;border-bottom:1px solid var(--line)}
+.project:first-of-type{padding-top:0}
+.project h3{font:700 1.3rem/1.25 var(--display)}
+.project .stack{color:var(--slate);font-size:.95rem;margin-top:6px}
+.project ul{padding-left:1.1rem;max-width:44em}
+.project li{margin-bottom:6px}
+.project .links{margin-top:10px;font-weight:600}
+.meta{color:var(--slate);font-size:.95rem}
+
+/* Timeline-style rows */
+.row{display:grid;grid-template-columns:220px 1fr;gap:8px 40px;padding:20px 0;border-bottom:1px solid var(--line)}
+.row h3{font:700 1.1rem/1.3 var(--display)}
+.row ul{padding-left:1.1rem;max-width:44em}
+.row li{margin-bottom:6px}
+
+/* Contact */
+.contact p{max-width:34em;color:var(--slate)}
+.contact .actions{margin-top:20px}
+
+footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--slate);font-size:.9rem}
+
+@media (max-width:860px){
+  .hero .wrap,.about{grid-template-columns:1fr;gap:32px}
+  .project,.row{grid-template-columns:1fr}
+  .skills{grid-template-columns:1fr}
+  .skills dt{border-bottom:none;padding-bottom:0}
+  nav{gap:14px}
+  nav a{font-size:.88rem}
+}
+@media (max-width:560px){
+  nav a:nth-child(n+4){display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .flow{animation:none;stroke-dashoffset:0}
+}
+</style>
 </head>
 <body>
-<header>
-  <nav class="container">
-    <a class="brand" href="#">Sai Kiran.</a>
-    <div class="links">
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Sai Kiran</a>
+    <nav aria-label="Main">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </header>
 
-<main>
-  <section class="hero container">
-    <div class="eyebrow">CLOUD INFRASTRUCTURE · AUTOMATION · MONITORING</div>
-    <h1>Venkata Sai Kiran<br>Nadupuru</h1>
-    <h2>Aspiring AWS Cloud Engineer</h2>
-    <p class="intro">
-      Engineering graduate building practical cloud infrastructure,
-      automated deployments, containerized applications and monitoring
-      solutions using AWS and infrastructure as code.
-    </p>
-    <div class="actions">
-      <a class="btn primary" href="#projects">Explore Projects →</a>
-      <a class="btn" href="https://github.com/venkatasaikirannadupuru">GitHub Profile ↗</a>
-      <a class="btn" href="https://www.linkedin.com/in/venkata-sai-kiran-nadupuru/">LinkedIn ↗</a>
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Nadupuru Venkata Sai Kiran</h1>
+      <p class="role">Cloud and DevOps engineer, 2025 graduate</p>
+      <p class="lead">I build AWS infrastructure as code, ship it through Jenkins pipelines, and set up the monitoring that tells me when it breaks. Based in Hyderabad, open to cloud, DevOps and infrastructure roles.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn ghost" href="resume.pdf">Download resume</a>
+      </div>
     </div>
-  </section>
 
-  <section id="about" class="container">
-    <h2>About Me</h2>
-    <p class="about">
-      I am an engineering graduate focused on AWS cloud services,
-      networking, infrastructure automation and reliable application
-      deployments. I enjoy building hands-on projects, troubleshooting
-      deployment issues and documenting technical solutions.
-      I am seeking an entry-level AWS Cloud Engineer or Cloud Operations role.
-    </p>
-  </section>
+    <div class="diagram">
+      <svg viewBox="0 0 520 430" role="group" aria-label="Diagram of my three-tier AWS project. Select a part to read what it does.">
+        <defs>
+          <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0 0L10 5L0 10z" fill="#0B7A78"/>
+          </marker>
+        </defs>
 
-  <section id="skills" class="container">
-    <h2>Technical Skills</h2>
-    <p class="section-intro">Technologies used in my learning and projects.</p>
-    <div class="skill-list">
-      <span class="skill">AWS EC2, S3, IAM</span>
-      <span class="skill">VPC & Networking</span>
-      <span class="skill">Terraform</span>
-      <span class="skill">CloudFormation</span>
-      <span class="skill">Docker</span>
-      <span class="skill">ECR & ECS</span>
-      <span class="skill">Jenkins</span>
-      <span class="skill">Linux</span>
-      <span class="skill">Python</span>
-      <span class="skill">SQL</span>
-      <span class="skill">Git & GitHub</span>
-      <span class="skill">CloudWatch</span>
+        <!-- Zones -->
+        <rect class="zone vpc" x="10" y="64" width="500" height="356" rx="12"/>
+        <text class="zone-label" x="24" y="84">VPC (Terraform)</text>
+        <rect class="zone" x="24" y="94" width="472" height="96" rx="8"/>
+        <text class="zone-label" x="36" y="112">Public subnet</text>
+        <rect class="zone" x="24" y="200" width="472" height="96" rx="8"/>
+        <text class="zone-label" x="36" y="218">Private subnet: application</text>
+        <rect class="zone" x="24" y="306" width="472" height="100" rx="8"/>
+        <text class="zone-label" x="36" y="324">Private subnet: database</text>
+
+        <!-- Flows -->
+        <path class="flow" d="M150 46 V128" marker-end="url(#arr)"/>
+        <path class="flow" d="M150 166 V234" marker-end="url(#arr)"/>
+        <path class="flow" d="M150 272 V348" marker-end="url(#arr)"/>
+        <path class="flow" d="M222 252 H340 V166" marker-end="url(#arr)"/>
+
+        <!-- Nodes -->
+        <g class="node" tabindex="0" role="button" data-title="Internet users" data-text="Traffic enters from the internet and only ever reaches the load balancer. Nothing else is publicly addressable.">
+          <rect x="80" y="10" width="140" height="36" rx="8"/>
+          <text x="150" y="33" text-anchor="middle">Internet</text>
+        </g>
+        <g class="node" tabindex="0" role="button" data-title="Application Load Balancer" data-text="Sits in the public subnet and forwards requests to the application instance in the private subnet.">
+          <rect x="80" y="128" width="140" height="38" rx="8"/>
+          <text x="150" y="152" text-anchor="middle">ALB</text>
+        </g>
+        <g class="node" tabindex="0" role="button" data-title="NAT Gateway" data-text="Lets the private application instance make outbound calls (for example pulling images) without being reachable from the internet.">
+          <rect x="270" y="128" width="140" height="38" rx="8"/>
+          <text x="340" y="152" text-anchor="middle">NAT Gateway</text>
+        </g>
+        <g class="node" tabindex="0" role="button" data-title="EC2 running Docker" data-text="The application runs as a Docker container on EC2. The image is built by Jenkins and pulled from Amazon ECR.">
+          <rect x="80" y="234" width="142" height="38" rx="8"/>
+          <text x="151" y="258" text-anchor="middle">EC2 + Docker</text>
+        </g>
+        <g class="node" tabindex="0" role="button" data-title="Amazon ECR" data-text="Stores the container images that Jenkins builds and publishes for deployment.">
+          <rect x="300" y="234" width="140" height="38" rx="8"/>
+          <text x="370" y="258" text-anchor="middle">ECR image</text>
+        </g>
+        <g class="node" tabindex="0" role="button" data-title="PostgreSQL on RDS" data-text="The database sits in its own private subnet. Security groups allow connections only from the application tier.">
+          <rect x="80" y="348" width="140" height="38" rx="8"/>
+          <text x="150" y="372" text-anchor="middle">RDS PostgreSQL</text>
+        </g>
+        <g class="node" tabindex="0" role="button" data-title="Security groups" data-text="Each tier only accepts traffic from the tier in front of it. The rules are defined in Terraform and reviewed in Git.">
+          <rect x="300" y="348" width="140" height="38" rx="8"/>
+          <text x="370" y="372" text-anchor="middle">Security groups</text>
+        </g>
+      </svg>
+      <p class="caption" id="caption" aria-live="polite"><strong>Production-style 3-tier deployment.</strong> Select any part of the diagram to see what it does.</p>
     </div>
-  </section>
+  </div>
+</div>
 
-  <section id="projects" class="container">
-    <h2>Featured Projects</h2>
-    <p class="section-intro">
-      Practical cloud projects, infrastructure code and technical documentation.
-    </p>
-    <div class="grid">
-      <article class="card">
-        <h3>Production 3-Tier AWS Application</h3>
-        <p>A multi-tier cloud application project focused on network
-        separation, application hosting, database connectivity and
-        infrastructure automation.</p>
-        <div class="tags">
-          <span class="tag">AWS</span><span class="tag">Terraform</span>
-          <span class="tag">ALB</span><span class="tag">RDS</span>
-        </div>
-        <a href="https://github.com/venkatasaikirannadupuru/production-3tier-aws">
-          View Source Code →
-        </a>
-      </article>
-
-      <article class="card">
-        <h3>Serverless Employee Platform</h3>
-        <p>A serverless application project exploring API-based requests,
-        managed compute, NoSQL data storage and event notifications.</p>
-        <div class="tags">
-          <span class="tag">API Gateway</span><span class="tag">Lambda</span>
-          <span class="tag">DynamoDB</span><span class="tag">SNS</span>
-        </div>
-        <a href="https://github.com/venkatasaikirannadupuru/serverless-employee-platform">
-          View Source Code →
-        </a>
-      </article>
-
-      <article class="card">
-        <h3>Application Observability Platform</h3>
-        <p>A developing application monitoring project focused on API
-        health, telemetry, logs, metrics and troubleshooting.</p>
-        <div class="tags">
-          <span class="tag">FastAPI</span><span class="tag">Docker</span>
-          <span class="tag">OpenTelemetry</span>
-        </div>
-        <a href="https://github.com/venkatasaikirannadupuru/application-observability-platform">
-          View Source Code →
-        </a>
-      </article>
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <h2>About</h2>
+      <p>I am an Electronics and Communication Engineering graduate who moved into cloud infrastructure through hands-on projects. I am comfortable with cloud infrastructure, application deployment, automation, networking and monitoring, on top of a base in programming, Linux, databases and version control.</p>
+      <p style="margin-top:14px">I am looking for a first role where I can apply this in a professional team and keep growing as an IT professional.</p>
     </div>
-    <p class="about">
-      Project descriptions reflect intended scope. Update each project
-      with verified implementation details, screenshots and test results.
-    </p>
-  </section>
+    <dl class="facts">
+      <dt>Education</dt>
+      <dd>B.Tech, Electronics and Communication Engineering, MVGR College of Engineering (8.35/10)</dd>
+      <dt>Training</dt>
+      <dd>AWS Cloud with DevOps, Rishi Online Training</dd>
+      <dt>Languages</dt>
+      <dd>English, Telugu</dd>
+      <dt>Location</dt>
+      <dd>Hyderabad, Telangana, India</dd>
+    </dl>
+  </div>
+</section>
 
-  <section id="contact" class="container">
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Cloud</dt><dd>AWS: EC2, IAM, S3, RDS, DynamoDB, Lambda</dd>
+      <dt>Infrastructure as code</dt><dd>Terraform, AWS CloudFormation</dd>
+      <dt>CI/CD and automation</dt><dd>Jenkins, Git, GitHub, AWS CLI</dd>
+      <dt>Containers</dt><dd>Docker, Amazon ECR, Amazon ECS, Fargate</dd>
+      <dt>Networking</dt><dd>VPC, public and private subnets, route tables, security groups, NACLs, NAT Gateway, Internet Gateway, load balancing</dd>
+      <dt>Monitoring</dt><dd>Amazon CloudWatch, EventBridge, SNS, logs and metrics</dd>
+      <dt>Programming</dt><dd>Python, SQL, Bash</dd>
+      <dt>Operating system</dt><dd>Linux</dd>
+    </dl>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+
+    <article class="project">
+      <div>
+        <h3>Production-style AWS 3-tier deployment</h3>
+        <p class="stack">AWS, Terraform, Jenkins, Docker, ECR, EC2, ALB, RDS, CloudWatch</p>
+      </div>
+      <div>
+        <ul>
+          <li>Designed a 3-tier architecture with separate public, private application and database layers.</li>
+          <li>Provisioned the VPC, subnets, route tables, security groups, NAT Gateway, ALB, EC2, ECR and PostgreSQL RDS with Terraform.</li>
+          <li>Containerized the application with Docker and stored images in Amazon ECR for deployment on EC2.</li>
+          <li>Automated provisioning, image builds, ECR publishing and deployment with Jenkins and GitHub.</li>
+        </ul>
+        <p class="links"><a href="https://github.com/venkatasaikirannadupuru/production-3tier-aws">View on GitHub</a></p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div>
+        <h3>Serverless employee management platform</h3>
+        <p class="stack">AWS Lambda, API Gateway, DynamoDB, SNS, CloudWatch, Terraform, Jenkins</p>
+      </div>
+      <div>
+        <ul>
+          <li>Built REST APIs to create, read, update and delete employee records.</li>
+          <li>Connected API Gateway to Python Lambda functions and DynamoDB for processing and storage.</li>
+          <li>Provisioned Lambda, API Gateway, DynamoDB, SNS, IAM and CloudWatch with Terraform and deployed through Jenkins.</li>
+        </ul>
+        <p class="links"><a href="https://github.com/venkatasaikirannadupuru/serverless-employee-platform">View on GitHub</a></p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div>
+        <h3>AWS monitoring and auto-healing platform</h3>
+        <p class="stack">CloudWatch, EventBridge, Lambda, SNS, EC2, Terraform, Jenkins</p>
+      </div>
+      <div>
+        <ul>
+          <li>Set up CloudWatch alarms on EC2 CPU utilization that send SNS alerts (1-minute evaluation period for testing).</li>
+          <li>Built event-driven recovery with EventBridge and Lambda that restarts stopped EC2 instances automatically.</li>
+          <li>Provisioned CloudWatch, EventBridge, Lambda, SNS, IAM and networking with Terraform, deployed through Jenkins.</li>
+        </ul>
+        <p class="links"><a href="https://github.com/venkatasaikirannadupuru/aws-monitoring-auto-healing">View on GitHub</a></p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div>
+        <h3>Micro-segmented AWS network security</h3>
+        <p class="stack">Terraform, VPC, Suricata (internship project)</p>
+      </div>
+      <div>
+        <ul>
+          <li>Designed an AWS network with separate public, private application and private database subnets.</li>
+          <li>Configured route tables, NAT Gateway and security groups to isolate application and database workloads.</li>
+          <li>Deployed Suricata, an open-source threat detection tool, to monitor traffic and flag suspicious activity.</li>
+        </ul>
+        <p class="links"><a href="https://github.com/venkatasaikirannadupuru/micro-segmented-cloud-network">View on GitHub</a></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience and training</h2>
+
+    <div class="row">
+      <div>
+        <h3>Cloud Security Intern</h3>
+        <p class="meta">RGUKT Srikakulam</p>
+      </div>
+      <ul>
+        <li>Worked on micro-segmented AWS network security using Terraform and Suricata (see the project above).</li>
+        <li>Completed the Fundamentals of Cloud Security certification.</li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <div>
+        <h3>AWS Cloud with DevOps training</h3>
+        <p class="meta">Rishi Online Training</p>
+      </div>
+      <ul>
+        <li>Hands-on AWS: VPC, EC2, IAM, S3, ELB, RDS, Route 53, EFS, Lambda and CloudWatch.</li>
+        <li>Infrastructure as code and automation with Terraform, CloudFormation and the AWS CLI, plus Linux administration and networking.</li>
+        <li>Containerized deployment, version control and CI/CD with Docker, ECS, ECR, Git, GitHub and Jenkins.</li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <div>
+        <h3>Certificates</h3>
+      </div>
+      <ul>
+        <li><a href="https://drive.google.com/file/d/1K1DzW2fS5vkAzOKGLyI_WoGgnZ-q4-QN/view?usp=sharing">Fundamentals of Cloud Security</a>, RGUKT Srikakulam</li>
+        <li><a href="https://drive.google.com/file/d/13Qt09_Jqx7S0A8V1PYRHdDXIVO4T1bRW/view?usp=drive_link">AWS with DevOps Training</a>, Rishi Online Training</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education">
+  <div class="wrap">
+    <h2>Education</h2>
+    <div class="row">
+      <div><h3>MVGR College of Engineering</h3><p class="meta">2021 to 2025</p></div>
+      <p>Bachelor of Technology, Electronics and Communication Engineering. Score: 8.35/10.</p>
+    </div>
+    <div class="row">
+      <div><h3>Sri Chaitanya Junior College</h3><p class="meta">2019 to 2021, Visakhapatnam</p></div>
+      <p>Class XII, MPC. Score: 95%.</p>
+    </div>
+    <div class="row">
+      <div><h3>Harshavardhana High School</h3><p class="meta">2018 to 2019, Gajapathinagaram</p></div>
+      <p>Class X. Score: 9.5/10.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact">
+  <div class="wrap">
     <h2>Contact</h2>
-    <div class="contact-card">
-      <p>Interested in entry-level cloud engineering opportunities
-      and hands-on infrastructure projects.</p>
-      <p>Location: Hyderabad, Telangana, India</p>
-      <p>GitHub:
-        <a href="https://github.com/venkatasaikirannadupuru">
-          github.com/venkatasaikirannadupuru
-        </a>
-      </p>
-      <p>LinkedIn:
-        <a href="https://www.linkedin.com/in/venkata-sai-kiran-nadupuru/">
-          View LinkedIn Profile
-        </a>
-      </p>
-      <p>Email: Add your preferred professional email here.</p>
+    <p>I am available for cloud, DevOps and infrastructure roles. Email is the fastest way to reach me.</p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:sn317600@gmail.com">Email me</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/venkata-sai-kiran-nadupuru-a946b1224/">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/venkatasaikirannadupuru">GitHub</a>
     </div>
-  </section>
+  </div>
+</section>
+
 </main>
 
 <footer>
-  <div class="container">
-    © 2026 Venkata Sai Kiran Nadupuru · Built with HTML and CSS
-  </div>
+  <div class="wrap">&copy; <span id="year">2026</span> Nadupuru Venkata Sai Kiran</div>
 </footer>
+
+<script>
+(function(){
+  var caption = document.getElementById('caption');
+  var nodes = document.querySelectorAll('.node');
+  function show(n){
+    nodes.forEach(function(x){ x.classList.remove('active'); });
+    n.classList.add('active');
+    caption.innerHTML = '';
+    var s = document.createElement('strong');
+    s.textContent = n.dataset.title + '. ';
+    caption.appendChild(s);
+    caption.appendChild(document.createTextNode(n.dataset.text));
+  }
+  nodes.forEach(function(n){
+    n.addEventListener('click', function(){ show(n); });
+    n.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); show(n); }
+    });
+  });
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
 </body>
 </html>
