@@ -3,156 +3,94 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Venkata Sai Kiran Nadupuru | Cloud &amp; DevOps Engineer</title>
-<meta name="description" content="Cloud and DevOps engineer (fresher) building AWS infrastructure with Terraform, Jenkins and Docker. Projects with architecture diagrams, skills and contact.">
-<meta property="og:title" content="Venkata Sai Kiran Nadupuru | Cloud &amp; DevOps Engineer">
-<meta property="og:description" content="AWS, Terraform, Jenkins, Docker. Three-tier deployments, serverless APIs and auto-healing monitoring.">
+<title>Nadupuru Venkata Sai Kiran | AWS Cloud Engineer (Fresher) | Hyderabad</title>
+<meta name="description" content="AWS Cloud Engineer (2025 graduate) in Hyderabad. Hands-on projects in VPC networking, Terraform, serverless APIs, monitoring and event-driven recovery.">
+<meta name="theme-color" content="#0B1626">
+<meta property="og:title" content="Nadupuru Venkata Sai Kiran | AWS Cloud Engineer (Fresher)">
+<meta property="og:description" content="Hands-on AWS projects: 3-tier deployment, serverless API, monitoring and auto-healing, network segmentation.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2312202F'/><text x='50' y='68' font-size='54' text-anchor='middle' fill='%2338BDB8' font-family='sans-serif' font-weight='700'>SK</text></svg>">
+<!-- After deploying, add: <link rel="canonical" href="YOUR_SITE_URL"> and og:image / og:url -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230B1626'/><text x='50' y='68' font-size='54' text-anchor='middle' fill='%232DD4BF' font-family='sans-serif' font-weight='700'>SK</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{--fog:#EDF1F5;--paper:#F8FAFC;--ink:#12202F;--slate:#4F6073;--line:#C9D3DD;--teal:#0B7A78;--teal-soft:#D5EDEC;--signal:#C98A00;
---display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{background:var(--fog);color:var(--ink);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
-a{color:var(--teal);text-underline-offset:3px}a:hover{color:var(--ink)}
-:focus-visible{outline:3px solid var(--signal);outline-offset:3px;border-radius:4px}
-.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-header.top{position:sticky;top:0;z-index:10;background:rgba(237,241,245,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-.brand{font:700 1.1rem var(--display);color:var(--ink);text-decoration:none}
-nav{display:flex;gap:22px;flex-wrap:wrap}
-nav a{color:var(--slate);text-decoration:none;font-size:.95rem;font-weight:500}
-nav a:hover{color:var(--ink);text-decoration:underline}
-
-.hero{padding:64px 0 72px}
-.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
-.hero h1{font:800 clamp(2.4rem,5.2vw,4rem)/1.04 var(--display);letter-spacing:-.025em}
-.hero .role{margin-top:18px;font:500 1.25rem/1.4 var(--display);color:var(--teal)}
-.hero p.lead{margin-top:18px;max-width:34em;color:var(--slate)}
-.actions{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--ink);transition:background .15s,color .15s}
-.btn.primary{background:var(--ink);color:var(--paper)}
-.btn.primary:hover{background:var(--teal);border-color:var(--teal);color:#fff}
-.btn.ghost{color:var(--ink);background:transparent}
-.btn.ghost:hover{background:var(--ink);color:var(--paper)}
-.toolkit{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:8px 24px}
-.toolkit dl{display:grid;grid-template-columns:90px 1fr}
-.toolkit dt,.toolkit dd{padding:14px 0;border-bottom:1px solid var(--line)}
-.toolkit dt:nth-last-of-type(1),.toolkit dd:last-of-type{border-bottom:none}
-.toolkit dt{font:700 1.05rem var(--display);color:var(--teal)}
-.toolkit dd{color:var(--ink);font-weight:500}
-
-section{padding:64px 0;border-top:1px solid var(--line)}
-section h2{font:700 clamp(1.7rem,3vw,2.2rem)/1.15 var(--display);letter-spacing:-.015em;margin-bottom:28px}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:48px}
-.about p{max-width:36em}
-.facts dt{font-weight:600}.facts dd{color:var(--slate);margin-bottom:12px}
-.skills{display:grid;grid-template-columns:200px 1fr}
-.skills dt,.skills dd{padding:12px 0;border-bottom:1px solid var(--line)}
-.skills dt{font-weight:600}.skills dd{color:var(--slate)}
-
-.project,.row{display:grid;grid-template-columns:220px minmax(0,1fr);gap:12px 40px;border-bottom:1px solid var(--line)}
-.project{padding:32px 0}.project:first-of-type{padding-top:0}
-.row{padding:20px 0}
-.project h3{font:700 1.3rem/1.25 var(--display)}
-.row h3{font:700 1.1rem/1.3 var(--display)}
-.stack,.meta{color:var(--slate);font-size:.95rem;margin-top:6px}
-.project ul,.row ul{padding-left:1.1rem;max-width:44em}
-.project li,.row li{margin-bottom:6px}
-.links{margin-top:10px;font-weight:600}
-
-/* Architecture diagrams */
-figure.arch{margin-top:20px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 14px 10px}
-.scroll{overflow-x:auto}
-.arch svg{display:block;width:100%;min-width:600px;height:auto}
-.arch figcaption{margin-top:8px;padding-top:8px;border-top:1px dashed var(--line);font-size:.9rem;color:var(--slate)}
-.nd{fill:#fff;stroke:var(--ink);stroke-width:1.6}
-.nd.ext{fill:var(--teal-soft);stroke:var(--teal)}
-.t{font:600 13px var(--body);fill:var(--ink);text-anchor:middle}
-.s{font:400 11px var(--body);fill:var(--slate);text-anchor:middle}
-.lb{font:500 11px var(--body);fill:var(--slate)}
-.zone{fill:none;stroke:var(--line);stroke-width:1.4;stroke-dasharray:5 4}
-.zone.vpc{stroke:var(--slate);stroke-dasharray:none;stroke-width:1.6}
-.ar{fill:none;stroke:var(--teal);stroke-width:2}
-.ar.dash{stroke-dasharray:5 4}
-
-.contact p{max-width:34em;color:var(--slate)}.contact .actions{margin-top:20px}
-footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--slate);font-size:.9rem}
-@media (max-width:860px){
-.hero .wrap,.about{grid-template-columns:1fr;gap:32px}
-.project,.row,.skills{grid-template-columns:1fr}
-.skills dt{border-bottom:none;padding-bottom:0}nav{gap:14px}nav a{font-size:.88rem}}
-@media (max-width:560px){nav a:nth-child(n+4){display:none}}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
-<marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#0B7A78"/></marker>
+<marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#2DD4BF"/></marker>
 </defs></svg>
+<a class="skip" href="#main">Skip to content</a>
 
-<header class="top"><div class="wrap">
-<a class="brand" href="#top">Sai Kiran</a>
-<nav aria-label="Main"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+<header class="top"><div class="wrap bar">
+<a class="brand" href="#home">Sai Kiran</a>
+<button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav" aria-label="Main"><ul>
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li>
+</ul></nav>
 </div></header>
 
-<main id="top">
-<div class="hero"><div class="wrap">
+<main id="main">
+<section class="hero" id="home"><div class="wrap hero-grid">
 <div>
+<p class="badge"><span class="dot" aria-hidden="true"></span>Open to entry-level cloud opportunities</p>
 <h1>Nadupuru Venkata Sai Kiran</h1>
-<p class="role">Cloud and DevOps engineer, 2025 graduate</p>
-<p class="lead">I build AWS infrastructure as code, ship it through Jenkins pipelines, and set up the monitoring that tells me when it breaks. Based in Hyderabad, open to cloud, DevOps and infrastructure roles.</p>
-<div class="actions"><a class="btn primary" href="#projects">See my projects</a><a class="btn ghost" href="resume.pdf">Download resume</a></div>
+<p class="headline">AWS Cloud Engineer | Cloud Infrastructure | Automation</p>
+<p class="lead">2025 engineering graduate with hands-on AWS projects covering infrastructure provisioning with Terraform, application deployment, VPC networking and monitoring. Based in Hyderabad, Telangana, India.</p>
+<div class="actions">
+<a class="btn primary" href="#projects">Explore My Projects</a>
+<a class="btn" href="resume.pdf" download>Download Resume</a>
 </div>
-<div class="toolkit"><dl>
-<dt>Build</dt><dd>Terraform, CloudFormation</dd>
-<dt>Ship</dt><dd>Jenkins, Docker, Amazon ECR</dd>
-<dt>Run</dt><dd>EC2, Lambda, RDS, DynamoDB</dd>
-<dt>Watch</dt><dd>CloudWatch, EventBridge, SNS</dd>
-</dl></div>
-</div></div>
+<p class="links"><a href="https://github.com/venkatasaikirannadupuru">GitHub</a><a href="https://www.linkedin.com/in/venkata-sai-kiran-nadupuru-a946b1224/">LinkedIn</a></p>
+</div>
+<figure class="hero-art">
+<svg viewBox="0 0 360 250" role="img" aria-label="Simplified three-tier AWS layout: a public subnet with a load balancer, a private application subnet with EC2, and a private database subnet with RDS.">
+<rect class="zone vpc" x="6" y="6" width="348" height="238" rx="14"/><text class="lb" x="20" y="26">VPC</text>
+<rect class="nd ext" x="30" y="40" width="300" height="52" rx="10"/><text class="t" x="180" y="62">Public subnet</text><text class="s" x="180" y="80">Application Load Balancer</text>
+<rect class="nd" x="30" y="108" width="300" height="52" rx="10"/><text class="t" x="180" y="130">Private subnet</text><text class="s" x="180" y="148">EC2 running Docker</text>
+<rect class="nd" x="30" y="176" width="300" height="52" rx="10"/><text class="t" x="180" y="198">Private subnet</text><text class="s" x="180" y="216">RDS PostgreSQL</text>
+<path class="ar" d="M180 92V108" marker-end="url(#ah)"/><path class="ar" d="M180 160V176" marker-end="url(#ah)"/>
+</svg>
+<figcaption>From my 3-tier AWS project</figcaption>
+</figure>
+</div></section>
 
-<section id="about"><div class="wrap about">
-<div><h2>About</h2>
-<p>I am an Electronics and Communication Engineering graduate who moved into cloud infrastructure through hands-on projects. I am comfortable with cloud infrastructure, application deployment, automation, networking and monitoring, on top of a base in programming, Linux, databases and version control.</p>
-<p style="margin-top:14px">I am looking for a first role where I can apply this in a professional team and keep growing as an IT professional.</p></div>
-<dl class="facts">
-<dt>Education</dt><dd>B.Tech, Electronics and Communication Engineering, MVGR College of Engineering (8.35/10)</dd>
-<dt>Training</dt><dd>AWS Cloud with DevOps, Rishi Online Training</dd>
-<dt>Languages</dt><dd>English, Telugu</dd>
-<dt>Location</dt><dd>Hyderabad, Telangana, India</dd>
-</dl></div></section>
+<section id="about"><div class="wrap narrow">
+<h2>About</h2>
+<p>I am an Electronics and Communication Engineering graduate moving into cloud infrastructure through hands-on AWS projects. I have built and deployed cloud networks, provisioned resources with Terraform, containerised an application, created a serverless API, and set up monitoring with event-driven recovery.</p>
+<p>I also work with Linux, Python, SQL and Git. Jenkins, Docker and CI/CD are tools I use to automate deployments. My goal is an entry-level AWS cloud engineering role where I can build on these foundations in a professional team.</p>
+</div></section>
 
-<section id="skills"><div class="wrap"><h2>Skills</h2>
-<dl class="skills">
-<dt>Cloud</dt><dd>AWS: EC2, IAM, S3, RDS, DynamoDB, Lambda</dd>
-<dt>Infrastructure as code</dt><dd>Terraform, AWS CloudFormation</dd>
-<dt>CI/CD and automation</dt><dd>Jenkins, Git, GitHub, AWS CLI</dd>
-<dt>Containers</dt><dd>Docker, Amazon ECR, Amazon ECS, Fargate</dd>
-<dt>Networking</dt><dd>VPC, public and private subnets, route tables, security groups, NACLs, NAT Gateway, Internet Gateway, load balancing</dd>
-<dt>Monitoring</dt><dd>Amazon CloudWatch, EventBridge, SNS, logs and metrics</dd>
-<dt>Programming</dt><dd>Python, SQL, Bash</dd>
-<dt>Operating system</dt><dd>Linux</dd>
-</dl></div></section>
+<section id="skills"><div class="wrap">
+<h2>Technical skills</h2>
+<div class="grid skill-grid">
+<div class="panel"><h3>AWS cloud services</h3><ul class="tags"><li>EC2</li><li>IAM</li><li>S3</li><li>RDS</li><li>DynamoDB</li><li>Lambda</li><li>API Gateway</li><li>ECR</li><li>ECS</li><li>Fargate</li><li>ALB</li><li>VPC</li><li>CloudWatch</li></ul></div>
+<div class="panel"><h3>Infrastructure as code</h3><ul class="tags"><li>Terraform</li><li>AWS CloudFormation</li></ul></div>
+<div class="panel"><h3>Networking</h3><ul class="tags"><li>VPC</li><li>Public/private subnets</li><li>Route tables</li><li>Security groups</li><li>NACLs</li><li>NAT Gateway</li><li>Internet Gateway</li><li>Load balancing</li></ul></div>
+<div class="panel"><h3>Monitoring</h3><ul class="tags"><li>CloudWatch</li><li>EventBridge</li><li>SNS</li><li>Logs and metrics</li></ul></div>
+<div class="panel"><h3>Containers and deployment</h3><ul class="tags"><li>Docker</li><li>Amazon ECR</li><li>Amazon ECS</li><li>Fargate</li></ul></div>
+<div class="panel"><h3>Automation and CI/CD</h3><ul class="tags"><li>Jenkins</li><li>Git</li><li>GitHub</li><li>AWS CLI</li></ul></div>
+<div class="panel"><h3>Programming</h3><ul class="tags"><li>Python</li><li>SQL</li><li>Bash</li></ul></div>
+<div class="panel"><h3>Operating systems</h3><ul class="tags"><li>Linux</li></ul></div>
+</div></div></section>
 
-<section id="projects"><div class="wrap"><h2>Projects</h2>
+<section id="projects"><div class="wrap">
+<h2>Featured projects</h2>
+<p class="sub">Four hands-on AWS projects. Each links to its source repository.</p>
 
-<!-- ===== Project 1 ===== -->
-<article class="project">
-<div><h3>Production-style AWS 3-tier deployment</h3><p class="stack">AWS, Terraform, Jenkins, Docker, ECR, EC2, ALB, RDS, CloudWatch</p></div>
-<div>
-<ul>
-<li>Designed a 3-tier architecture with separate public, private application and database layers.</li>
-<li>Provisioned the VPC, subnets, route tables, security groups, NAT Gateway, ALB, EC2, ECR and PostgreSQL RDS with Terraform.</li>
-<li>Containerized the application with Docker and stored images in Amazon ECR for deployment on EC2.</li>
-<li>Automated provisioning, image builds, ECR publishing and deployment with Jenkins and GitHub.</li>
+<article class="card" id="p1">
+<h3>Production-style AWS 3-tier deployment</h3>
+<p class="ov">A three-tier application on AWS with a public load balancer and private application and database tiers, provisioned with Terraform and delivered through Jenkins.</p>
+<ul class="tags"><li>AWS</li><li>Terraform</li><li>EC2</li><li>ALB</li><li>RDS PostgreSQL</li><li>Docker</li><li>ECR</li><li>Jenkins</li><li>CloudWatch</li></ul>
+<ul class="pts">
+<li>Separate public, private application and database layers inside one VPC.</li>
+<li>Terraform provisions the VPC, subnets, route tables, security groups, NAT Gateway, ALB, EC2, ECR and PostgreSQL RDS.</li>
+<li>The application is containerised with Docker and its images are stored in Amazon ECR for deployment on EC2.</li>
+<li>Jenkins and GitHub automate provisioning, image builds, ECR publishing and deployment.</li>
 </ul>
+<details class="arch-d" open><summary>View architecture</summary>
 <figure class="arch"><div class="scroll">
-<svg viewBox="0 0 680 360" role="img" aria-label="Architecture: GitHub triggers Jenkins, which runs Terraform to provision the VPC and pushes images to ECR. Internet traffic reaches the ALB in the public subnet, then EC2 running Docker in the private app subnet, then RDS PostgreSQL in the private database subnet. A NAT Gateway handles outbound traffic.">
+<svg viewBox="0 0 680 360" role="img" aria-label="Architecture: GitHub triggers Jenkins, which runs Terraform to provision the VPC and pushes images to ECR. Internet traffic reaches the ALB in the public subnet, then EC2 running Docker in the private app subnet, then RDS PostgreSQL in the private database subnet. A NAT Gateway handles outbound traffic from the app tier.">
 <rect class="zone vpc" x="125" y="80" width="545" height="265" rx="12"/><text class="lb" x="140" y="98">VPC (Terraform)</text>
 <rect class="zone" x="140" y="108" width="150" height="222" rx="8"/><text class="lb" x="152" y="126">Public subnet</text>
 <rect class="zone" x="305" y="108" width="170" height="222" rx="8"/><text class="lb" x="317" y="126">Private: app</text>
@@ -165,8 +103,7 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--slate);f
 <rect class="nd" x="160" y="260" width="110" height="36" rx="8"/><text class="t" x="215" y="283">NAT Gateway</text>
 <rect class="nd" x="325" y="190" width="130" height="50" rx="8"/><text class="t" x="390" y="212">EC2</text><text class="s" x="390" y="229">Docker container</text>
 <rect class="nd" x="510" y="190" width="125" height="50" rx="8"/><text class="t" x="572" y="212">RDS</text><text class="s" x="572" y="229">PostgreSQL</text>
-<path class="ar" d="M110 32H170" marker-end="url(#ah)"/>
-<path class="ar" d="M290 32H330" marker-end="url(#ah)"/>
+<path class="ar" d="M110 32H170" marker-end="url(#ah)"/><path class="ar" d="M290 32H330" marker-end="url(#ah)"/>
 <path class="ar dash" d="M230 54V80" marker-end="url(#ah)"/><text class="lb" x="238" y="72">Terraform</text>
 <path class="ar" d="M420 54V190" marker-end="url(#ah)"/><text class="lb" x="428" y="160">image pull</text>
 <path class="ar" d="M100 190H118V168H160" marker-end="url(#ah)"/>
@@ -174,77 +111,76 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--slate);f
 <path class="ar" d="M455 215H510" marker-end="url(#ah)"/>
 <path class="ar" d="M325 228H297V278H270" marker-end="url(#ah)"/>
 </svg></div>
-<figcaption>Each tier sits in its own subnet. Security groups control which tier can talk to which; the NAT Gateway handles outbound traffic from the private app tier.</figcaption></figure>
-<p class="links"><a href="https://github.com/venkatasaikirannadupuru/production-3tier-aws">View on GitHub</a></p>
-</div>
+<figcaption>Only the load balancer faces the internet. The app tier reaches out through the NAT Gateway; the database is reached from the app tier.</figcaption></figure></details>
+<p class="cta"><a class="btn" href="https://github.com/venkatasaikirannadupuru/production-3tier-aws">View source on GitHub</a></p>
 </article>
 
-<!-- ===== Project 2 ===== -->
-<article class="project">
-<div><h3>Serverless employee management platform</h3><p class="stack">AWS Lambda, API Gateway, DynamoDB, SNS, CloudWatch, Terraform, Jenkins</p></div>
-<div>
-<ul>
-<li>Built REST APIs to create, read, update and delete employee records.</li>
-<li>Connected API Gateway to Python Lambda functions and DynamoDB for processing and storage.</li>
-<li>Provisioned Lambda, API Gateway, DynamoDB, SNS, IAM and CloudWatch with Terraform and deployed through Jenkins.</li>
+<article class="card" id="p2">
+<h3>Serverless employee management platform</h3>
+<p class="ov">A serverless REST API for managing employee records, with infrastructure defined in Terraform and deployed through Jenkins.</p>
+<ul class="tags"><li>AWS</li><li>API Gateway</li><li>Lambda (Python)</li><li>DynamoDB</li><li>SNS</li><li>CloudWatch</li><li>Terraform</li><li>Jenkins</li></ul>
+<ul class="pts">
+<li>REST APIs to create, read, update and delete employee records.</li>
+<li>API Gateway exposes the endpoints, Python Lambda functions run the logic, and DynamoDB stores the records.</li>
+<li>Terraform provisions Lambda, API Gateway, DynamoDB, SNS, IAM and CloudWatch; Jenkins automates deployment.</li>
 </ul>
+<details class="arch-d" open><summary>View architecture</summary>
 <figure class="arch"><div class="scroll">
-<svg viewBox="0 0 680 210" role="img" aria-label="Architecture: a client calls API Gateway, which invokes a Python Lambda function that reads and writes DynamoDB. Jenkins runs Terraform to provision the stack.">
+<svg viewBox="0 0 680 210" role="img" aria-label="Architecture: a client calls API Gateway, which invokes a Python Lambda function that reads and writes DynamoDB. Separately, Jenkins runs Terraform to provision the stack.">
 <rect class="nd ext" x="10" y="60" width="90" height="44" rx="8"/><text class="t" x="55" y="87">Client</text>
 <rect class="nd" x="150" y="60" width="120" height="44" rx="8"/><text class="t" x="210" y="80">API Gateway</text><text class="s" x="210" y="96">REST APIs</text>
 <rect class="nd" x="320" y="60" width="120" height="44" rx="8"/><text class="t" x="380" y="80">Lambda</text><text class="s" x="380" y="96">Python</text>
 <rect class="nd" x="490" y="60" width="130" height="44" rx="8"/><text class="t" x="555" y="80">DynamoDB</text><text class="s" x="555" y="96">employee records</text>
-<path class="ar" d="M100 82H150" marker-end="url(#ah)"/>
-<path class="ar" d="M270 82H320" marker-end="url(#ah)"/>
-<path class="ar" d="M440 82H490" marker-end="url(#ah)"/>
+<path class="ar" d="M100 82H150" marker-end="url(#ah)"/><path class="ar" d="M270 82H320" marker-end="url(#ah)"/><path class="ar" d="M440 82H490" marker-end="url(#ah)"/>
+<text class="lb" x="10" y="140">Request flow (above) and provisioning workflow (below)</text>
 <rect class="nd" x="150" y="150" width="100" height="40" rx="8"/><text class="t" x="200" y="175">Jenkins</text>
 <rect class="nd" x="300" y="150" width="100" height="40" rx="8"/><text class="t" x="350" y="175">Terraform</text>
 <path class="ar dash" d="M250 170H300" marker-end="url(#ah)"/>
 <text class="lb" x="414" y="166">Provisions API Gateway, Lambda,</text><text class="lb" x="414" y="182">DynamoDB, SNS, IAM and CloudWatch</text>
 </svg></div>
-<figcaption>Requests flow from the client through API Gateway and Lambda to DynamoDB. Jenkins runs Terraform to create and update the whole stack.</figcaption></figure>
-<p class="links"><a href="https://github.com/venkatasaikirannadupuru/serverless-employee-platform">View on GitHub</a></p>
-</div>
+<figcaption>Solid arrows are API requests. Dashed arrows are the infrastructure provisioning workflow.</figcaption></figure></details>
+<p class="cta"><a class="btn" href="https://github.com/venkatasaikirannadupuru/serverless-employee-platform">View source on GitHub</a></p>
 </article>
 
-<!-- ===== Project 3 ===== -->
-<article class="project">
-<div><h3>AWS monitoring and auto-healing platform</h3><p class="stack">CloudWatch, EventBridge, Lambda, SNS, EC2, Terraform, Jenkins</p></div>
-<div>
-<ul>
-<li>Set up CloudWatch alarms on EC2 CPU utilization that send SNS alerts (1-minute evaluation period for testing).</li>
-<li>Built event-driven recovery with EventBridge and Lambda that restarts stopped EC2 instances automatically.</li>
-<li>Provisioned CloudWatch, EventBridge, Lambda, SNS, IAM and networking with Terraform, deployed through Jenkins.</li>
+<article class="card" id="p3">
+<h3>AWS monitoring and auto-healing platform</h3>
+<p class="ov">Two separate mechanisms for an EC2 instance: CPU alerting through CloudWatch and SNS, and restart of stopped instances through EventBridge and Lambda.</p>
+<ul class="tags"><li>AWS</li><li>CloudWatch</li><li>EventBridge</li><li>Lambda</li><li>SNS</li><li>EC2</li><li>Terraform</li><li>Jenkins</li></ul>
+<ul class="pts">
+<li><strong>Alerting:</strong> a CloudWatch alarm watches EC2 CPU utilisation and sends SNS alerts (1-minute evaluation period, set for testing).</li>
+<li><strong>Recovery:</strong> EventBridge detects stopped instances and a Lambda function restarts them.</li>
+<li>Terraform provisions CloudWatch, EventBridge, Lambda, SNS, IAM and networking; Jenkins automates deployment.</li>
 </ul>
+<details class="arch-d" open><summary>View architecture</summary>
 <figure class="arch"><div class="scroll">
-<svg viewBox="0 0 680 260" role="img" aria-label="Architecture: an EC2 instance is monitored two ways. A CloudWatch CPU alarm sends an SNS alert. When the instance stops, EventBridge triggers a Lambda function that restarts it.">
-<rect class="nd" x="10" y="100" width="110" height="50" rx="8"/><text class="t" x="65" y="122">EC2</text><text class="s" x="65" y="139">monitored instance</text>
+<svg viewBox="0 0 680 270" role="img" aria-label="Architecture with two separate paths. Alerting path: an EC2 instance's CPU is watched by a CloudWatch alarm, which sends an SNS alert. Recovery path: when the instance stops, EventBridge triggers a Lambda function that restarts it.">
+<rect class="nd" x="10" y="105" width="110" height="50" rx="8"/><text class="t" x="65" y="127">EC2</text><text class="s" x="65" y="144">monitored instance</text>
+<text class="lb" x="190" y="22">Path 1: CPU alerting</text>
 <rect class="nd" x="190" y="30" width="130" height="50" rx="8"/><text class="t" x="255" y="52">CloudWatch</text><text class="s" x="255" y="69">CPU alarm</text>
 <rect class="nd" x="400" y="30" width="120" height="50" rx="8"/><text class="t" x="460" y="52">SNS</text><text class="s" x="460" y="69">alert</text>
+<text class="lb" x="190" y="162">Path 2: instance-state recovery</text>
 <rect class="nd" x="190" y="170" width="130" height="50" rx="8"/><text class="t" x="255" y="192">EventBridge</text><text class="s" x="255" y="209">instance stopped</text>
 <rect class="nd" x="400" y="170" width="120" height="50" rx="8"/><text class="t" x="460" y="192">Lambda</text><text class="s" x="460" y="209">restart instance</text>
-<path class="ar" d="M120 115H155V55H190" marker-end="url(#ah)"/>
-<path class="ar" d="M120 135H155V195H190" marker-end="url(#ah)"/>
-<path class="ar" d="M320 55H400" marker-end="url(#ah)"/>
-<path class="ar" d="M320 195H400" marker-end="url(#ah)"/>
-<path class="ar" d="M460 220V245H65V150" marker-end="url(#ah)"/><text class="lb" x="262" y="238" text-anchor="middle">start instance</text>
+<path class="ar" d="M120 120H155V55H190" marker-end="url(#ah)"/><path class="ar" d="M120 140H155V195H190" marker-end="url(#ah)"/>
+<path class="ar" d="M320 55H400" marker-end="url(#ah)"/><path class="ar" d="M320 195H400" marker-end="url(#ah)"/>
+<path class="ar" d="M460 220V250H65V155" marker-end="url(#ah)"/><text class="lb" x="262" y="243" text-anchor="middle">start instance</text>
 </svg></div>
-<figcaption>Two paths from one instance: high CPU raises an alert, and a stopped instance is restarted automatically. Terraform provisions it and Jenkins deploys it.</figcaption></figure>
-<p class="links"><a href="https://github.com/venkatasaikirannadupuru/aws-monitoring-auto-healing">View on GitHub</a></p>
-</div>
+<figcaption>A CPU alarm only notifies. Restarting applies only to instances that have stopped. This is a learning project, not a guarantee of recovery.</figcaption></figure></details>
+<p class="cta"><a class="btn" href="https://github.com/venkatasaikirannadupuru/aws-monitoring-auto-healing">View source on GitHub</a></p>
 </article>
 
-<!-- ===== Project 4 ===== -->
-<article class="project">
-<div><h3>Micro-segmented AWS network security</h3><p class="stack">Terraform, VPC, Suricata (internship project)</p></div>
-<div>
-<ul>
-<li>Designed an AWS network with separate public, private application and private database subnets.</li>
-<li>Configured route tables, NAT Gateway and security groups to isolate application and database workloads.</li>
-<li>Deployed Suricata, an open-source threat detection tool, to monitor traffic and flag suspicious activity.</li>
+<article class="card" id="p4">
+<h3>Micro-segmented AWS network security</h3>
+<p class="ov">An internship project that separates workloads into public, private application and private database subnets and adds Suricata for traffic monitoring.</p>
+<ul class="tags"><li>AWS VPC</li><li>Terraform</li><li>Subnet segmentation</li><li>Security groups</li><li>NAT Gateway</li><li>Suricata</li></ul>
+<ul class="pts">
+<li>Three subnet tiers (public, private application, private database) provisioned with Terraform.</li>
+<li>Route tables, NAT Gateway and security groups control communication and isolate application and database workloads.</li>
+<li>Suricata, an open-source threat detection tool, monitors traffic and helps identify suspicious activity.</li>
 </ul>
+<details class="arch-d" open><summary>View architecture</summary>
 <figure class="arch"><div class="scroll">
-<svg viewBox="0 0 680 245" role="img" aria-label="Architecture: a VPC with a public subnet containing a NAT Gateway, a private application subnet and a private database subnet. The application reaches the internet through the NAT Gateway and connects to the database. Suricata monitors network traffic.">
+<svg viewBox="0 0 680 245" role="img" aria-label="Architecture: a VPC with a public subnet containing a NAT Gateway, a private application subnet and a private database subnet. The application reaches the internet through the NAT Gateway and connects to the database. Suricata is shown as monitoring network traffic; its exact placement is described in the repository.">
 <rect class="zone vpc" x="125" y="20" width="545" height="215" rx="12"/><text class="lb" x="140" y="38">VPC (Terraform)</text>
 <rect class="zone" x="140" y="48" width="150" height="110" rx="8"/><text class="lb" x="152" y="66">Public subnet</text>
 <rect class="zone" x="305" y="48" width="170" height="110" rx="8"/><text class="lb" x="317" y="66">Private: app</text>
@@ -253,40 +189,48 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--slate);f
 <rect class="nd" x="160" y="90" width="110" height="36" rx="8"/><text class="t" x="215" y="113">NAT Gateway</text>
 <rect class="nd" x="325" y="90" width="130" height="36" rx="8"/><text class="t" x="390" y="113">Application</text>
 <rect class="nd" x="510" y="90" width="125" height="36" rx="8"/><text class="t" x="572" y="113">Database</text>
-<path class="ar" d="M325 108H270" marker-end="url(#ah)"/>
-<path class="ar" d="M160 108H100" marker-end="url(#ah)"/>
-<path class="ar" d="M455 108H510" marker-end="url(#ah)"/>
-<rect class="nd" x="140" y="176" width="515" height="40" rx="8" style="stroke-dasharray:5 4"/>
+<path class="ar" d="M325 108H270" marker-end="url(#ah)"/><path class="ar" d="M160 108H100" marker-end="url(#ah)"/><path class="ar" d="M455 108H510" marker-end="url(#ah)"/>
+<rect class="nd dashbox" x="140" y="176" width="515" height="40" rx="8"/>
 <text class="t" x="397" y="201">Suricata: monitors network traffic and flags suspicious activity</text>
 </svg></div>
-<figcaption>Each workload type lives in its own subnet. Security groups and route tables control what can reach what.</figcaption></figure>
-<p class="links"><a href="https://github.com/venkatasaikirannadupuru/micro-segmented-cloud-network">View on GitHub</a></p>
-</div>
+<figcaption>Each workload type has its own subnet. The Suricata bar shows its role only; check the repository for its exact placement.</figcaption></figure></details>
+<p class="cta"><a class="btn" href="https://github.com/venkatasaikirannadupuru/micro-segmented-cloud-network">View source on GitHub</a></p>
 </article>
 </div></section>
 
-<section id="experience"><div class="wrap"><h2>Experience and training</h2>
-<div class="row"><div><h3>Cloud Security Intern</h3><p class="meta">RGUKT Srikakulam</p></div>
-<ul><li>Worked on micro-segmented AWS network security using Terraform and Suricata (see the project above).</li><li>Completed the Fundamentals of Cloud Security certification.</li></ul></div>
-<div class="row"><div><h3>AWS Cloud with DevOps training</h3><p class="meta">Rishi Online Training</p></div>
-<ul><li>Hands-on AWS: VPC, EC2, IAM, S3, ELB, RDS, Route 53, EFS, Lambda and CloudWatch.</li><li>Infrastructure as code and automation with Terraform, CloudFormation and the AWS CLI, plus Linux administration and networking.</li><li>Containerized deployment, version control and CI/CD with Docker, ECS, ECR, Git, GitHub and Jenkins.</li></ul></div>
-<div class="row"><div><h3>Certificates</h3></div>
-<ul><li><a href="https://drive.google.com/file/d/1K1DzW2fS5vkAzOKGLyI_WoGgnZ-q4-QN/view?usp=sharing">Fundamentals of Cloud Security</a>, RGUKT Srikakulam</li><li><a href="https://drive.google.com/file/d/13Qt09_Jqx7S0A8V1PYRHdDXIVO4T1bRW/view?usp=drive_link">AWS with DevOps Training</a>, Rishi Online Training</li></ul></div>
-</div></section>
+<section id="experience"><div class="wrap narrow">
+<h2>Experience and training</h2>
+<ol class="timeline">
+<li><h3>Cloud Security Intern</h3><p class="meta">RGUKT Srikakulam</p>
+<p>Built the micro-segmented AWS network security project using Terraform, VPC networking and Suricata (see the project above).</p>
+<p><a href="https://drive.google.com/file/d/1K1DzW2fS5vkAzOKGLyI_WoGgnZ-q4-QN/view?usp=sharing">View Fundamentals of Cloud Security certificate</a></p></li>
+<li><h3>AWS Cloud with DevOps training</h3><p class="meta">Rishi Online Training (training programme)</p>
+<p>Covered AWS (VPC, EC2, IAM, S3, ELB, RDS, Route 53, EFS, Lambda, CloudWatch), Terraform, CloudFormation and the AWS CLI, Linux administration and networking, and Docker, ECS, ECR, Git, GitHub and Jenkins.</p>
+<p><a href="https://drive.google.com/file/d/13Qt09_Jqx7S0A8V1PYRHdDXIVO4T1bRW/view?usp=drive_link">View AWS with DevOps Training certificate</a></p></li>
+</ol></div></section>
 
-<section id="education"><div class="wrap"><h2>Education</h2>
-<div class="row"><div><h3>MVGR College of Engineering</h3><p class="meta">2021 to 2025</p></div><p>Bachelor of Technology, Electronics and Communication Engineering. Score: 8.35/10.</p></div>
-<div class="row"><div><h3>Sri Chaitanya Junior College</h3><p class="meta">2019 to 2021, Visakhapatnam</p></div><p>Class XII, MPC. Score: 95%.</p></div>
-<div class="row"><div><h3>Harshavardhana High School</h3><p class="meta">2018 to 2019, Gajapathinagaram</p></div><p>Class X. Score: 9.5/10.</p></div>
-</div></section>
+<section id="education"><div class="wrap narrow">
+<h2>Education</h2>
+<ul class="edu">
+<li><h3>MVGR College of Engineering</h3><p class="meta">2021 to 2025</p><p>B.Tech, Electronics and Communication Engineering. 8.35/10.</p></li>
+<li><h3>Sri Chaitanya Junior College</h3><p class="meta">2019 to 2021</p><p>Class XII, MPC. 95%.</p></li>
+<li><h3>Harshavardhana High School</h3><p class="meta">2018 to 2019</p><p>Class X. 9.5/10.</p></li>
+</ul></div></section>
 
-<section id="contact" class="contact"><div class="wrap"><h2>Contact</h2>
-<p>I am available for cloud, DevOps and infrastructure roles. Email is the fastest way to reach me.</p>
-<div class="actions"><a class="btn primary" href="mailto:sn317600@gmail.com">Email me</a><a class="btn ghost" href="https://www.linkedin.com/in/venkata-sai-kiran-nadupuru-a946b1224/">LinkedIn</a><a class="btn ghost" href="https://github.com/venkatasaikirannadupuru">GitHub</a></div>
+<section id="contact"><div class="wrap narrow">
+<h2>Contact</h2>
+<p>I am looking for an entry-level AWS cloud role. If you are hiring, or want to talk about any of these projects, I would be glad to hear from you.</p>
+<div class="actions">
+<a class="btn primary" href="mailto:sn317600@gmail.com">Email me</a>
+<a class="btn" href="https://github.com/venkatasaikirannadupuru">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/venkata-sai-kiran-nadupuru-a946b1224/">LinkedIn</a>
+<a class="btn" href="resume.pdf" download>Download Resume</a>
+</div>
+<p class="meta">Hyderabad, Telangana, India</p>
 </div></section>
 </main>
 
 <footer><div class="wrap">&copy; <span id="year">2026</span> Nadupuru Venkata Sai Kiran</div></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<script src="script.js"></script>
 </body>
 </html>
