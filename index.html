@@ -1,1 +1,211 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Venkata Sai Kiran Nadupuru — AWS Cloud Engineer portfolio, cloud infrastructure, automation and monitoring projects.">
+  <title>Venkata Sai Kiran | AWS Cloud Engineer</title>
+  <style>
+    :root {
+      --bg: #0b1120;
+      --panel: #111c30;
+      --text: #edf4ff;
+      --muted: #a6b5cc;
+      --accent: #60a5fa;
+      --border: #26364e;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(1080px, 90%); margin: auto; }
+    header {
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0;
+      background: #0b1120f2;
+      backdrop-filter: blur(12px);
+    }
+    nav {
+      min-height: 72px; display: flex;
+      justify-content: space-between; align-items: center;
+      gap: 20px; flex-wrap: wrap;
+    }
+    .brand { font-weight: 750; color: var(--text); }
+    .links { display: flex; gap: 20px; flex-wrap: wrap; }
+    .links a { color: var(--muted); font-size: .94rem; }
+    .hero { padding: 100px 0 76px; }
+    .eyebrow { color: var(--accent); font-weight: 650; }
+    h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.12; margin: 16px 0; letter-spacing: -2px; }
+    h2 { font-size: 1.9rem; margin-bottom: 10px; }
+    .intro { max-width: 690px; color: var(--muted); font-size: 1.12rem; }
+    .actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+    .btn { padding: 11px 19px; border: 1px solid var(--border); border-radius: 8px; font-weight: 650; }
+    .primary { background: var(--accent); color: #081326; border-color: var(--accent); }
+    section { padding: 48px 0; }
+    .section-intro { color: var(--muted); margin-top: 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; margin-top: 26px; }
+    .card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 23px; }
+    .card h3 { margin-top: 0; }
+    .card p, .about { color: var(--muted); }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 17px 0; }
+    .tag { background: #1b2b43; color: #c9ddfb; padding: 4px 9px; border-radius: 5px; font-size: .82rem; }
+    .skill-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+    .skill { border: 1px solid var(--border); border-radius: 8px; padding: 8px 13px; }
+    .contact-card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 26px; }
+    footer { border-top: 1px solid var(--border); padding: 26px 0; color: var(--muted); font-size: .9rem; }
+    @media(max-width: 600px) {
+      .hero { padding-top: 65px; }
+      .links { gap: 12px; }
+      nav { padding: 12px 0; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav class="container">
+    <a class="brand" href="#">Sai Kiran.</a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero container">
+    <div class="eyebrow">CLOUD INFRASTRUCTURE · AUTOMATION · MONITORING</div>
+    <h1>Venkata Sai Kiran<br>Nadupuru</h1>
+    <h2>Aspiring AWS Cloud Engineer</h2>
+    <p class="intro">
+      Engineering graduate building practical cloud infrastructure,
+      automated deployments, containerized applications and monitoring
+      solutions using AWS and infrastructure as code.
+    </p>
+    <div class="actions">
+      <a class="btn primary" href="#projects">Explore Projects →</a>
+      <a class="btn" href="https://github.com/venkatasaikirannadupuru">GitHub Profile ↗</a>
+      <a class="btn" href="https://www.linkedin.com/in/venkata-sai-kiran-nadupuru/">LinkedIn ↗</a>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p class="about">
+      I am an engineering graduate focused on AWS cloud services,
+      networking, infrastructure automation and reliable application
+      deployments. I enjoy building hands-on projects, troubleshooting
+      deployment issues and documenting technical solutions.
+      I am seeking an entry-level AWS Cloud Engineer or Cloud Operations role.
+    </p>
+  </section>
+
+  <section id="skills" class="container">
+    <h2>Technical Skills</h2>
+    <p class="section-intro">Technologies used in my learning and projects.</p>
+    <div class="skill-list">
+      <span class="skill">AWS EC2, S3, IAM</span>
+      <span class="skill">VPC & Networking</span>
+      <span class="skill">Terraform</span>
+      <span class="skill">CloudFormation</span>
+      <span class="skill">Docker</span>
+      <span class="skill">ECR & ECS</span>
+      <span class="skill">Jenkins</span>
+      <span class="skill">Linux</span>
+      <span class="skill">Python</span>
+      <span class="skill">SQL</span>
+      <span class="skill">Git & GitHub</span>
+      <span class="skill">CloudWatch</span>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Featured Projects</h2>
+    <p class="section-intro">
+      Practical cloud projects, infrastructure code and technical documentation.
+    </p>
+    <div class="grid">
+      <article class="card">
+        <h3>Production 3-Tier AWS Application</h3>
+        <p>A multi-tier cloud application project focused on network
+        separation, application hosting, database connectivity and
+        infrastructure automation.</p>
+        <div class="tags">
+          <span class="tag">AWS</span><span class="tag">Terraform</span>
+          <span class="tag">ALB</span><span class="tag">RDS</span>
+        </div>
+        <a href="https://github.com/venkatasaikirannadupuru/production-3tier-aws">
+          View Source Code →
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>Serverless Employee Platform</h3>
+        <p>A serverless application project exploring API-based requests,
+        managed compute, NoSQL data storage and event notifications.</p>
+        <div class="tags">
+          <span class="tag">API Gateway</span><span class="tag">Lambda</span>
+          <span class="tag">DynamoDB</span><span class="tag">SNS</span>
+        </div>
+        <a href="https://github.com/venkatasaikirannadupuru/serverless-employee-platform">
+          View Source Code →
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>Application Observability Platform</h3>
+        <p>A developing application monitoring project focused on API
+        health, telemetry, logs, metrics and troubleshooting.</p>
+        <div class="tags">
+          <span class="tag">FastAPI</span><span class="tag">Docker</span>
+          <span class="tag">OpenTelemetry</span>
+        </div>
+        <a href="https://github.com/venkatasaikirannadupuru/application-observability-platform">
+          View Source Code →
+        </a>
+      </article>
+    </div>
+    <p class="about">
+      Project descriptions reflect intended scope. Update each project
+      with verified implementation details, screenshots and test results.
+    </p>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <div class="contact-card">
+      <p>Interested in entry-level cloud engineering opportunities
+      and hands-on infrastructure projects.</p>
+      <p>Location: Hyderabad, Telangana, India</p>
+      <p>GitHub:
+        <a href="https://github.com/venkatasaikirannadupuru">
+          github.com/venkatasaikirannadupuru
+        </a>
+      </p>
+      <p>LinkedIn:
+        <a href="https://www.linkedin.com/in/venkata-sai-kiran-nadupuru/">
+          View LinkedIn Profile
+        </a>
+      </p>
+      <p>Email: Add your preferred professional email here.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 Venkata Sai Kiran Nadupuru · Built with HTML and CSS
+  </div>
+</footer>
+</body>
+</html>
